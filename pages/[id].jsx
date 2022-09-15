@@ -4,7 +4,7 @@ import axios  from"axios"
 import styles from '../styles/Item.module.css'
 
 
-const items = () => {
+const Items = () => {
     const router = useRouter();
     const {id} = router.query;
     const [data, setData] = useState({})
@@ -95,4 +95,4 @@ const items = () => {
   
   }
 
-export default items 
+export default  Items

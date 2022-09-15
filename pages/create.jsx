@@ -1,10 +1,10 @@
 import { useRouter } from 'next/router'
-import { useEffect, useState } from 'react';
+import {  useState } from 'react';
 import axios  from"axios"
 import styles from '../styles/Item.module.css'
 
 
-const edit = () => {
+const Edit = () => {
   const router = useRouter();
   const [price, setPrice] = useState('');
   const [name, setName] = useState("");
@@ -74,4 +74,4 @@ const edit = () => {
 }
 
 
-export default edit
+export default Edit
