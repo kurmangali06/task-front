@@ -1,0 +1,94 @@
+.title {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.button {
+  margin-top: 40px;
+  display: inline-block;
+  background-color: orange;
+  border-radius: 30px;
+  padding: 40px 40px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color duration ease-in-out, border-color duration ease-in-out;
+  border: 1px solid transparent;
+}
+
+.button:hover {
+  background-color: yellowgreen;
+}
+.input {
+  border: 1px solid rgba(0, 0 ,0,0.1);
+  padding: 12px 20px;
+  padding-left: 42px;
+  width: 100%;
+  border-radius: 12px;
+  font-size: 16px;
+  margin: 0 auto;
+    
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+  opacity: 0.3;
+  position: relative;
+  left: 14px;
+  top: 35px;
+}
+
+.root {
+  position: absolute;
+  width: 100%;;
+}
+
+.clearIcon{
+  width: 18px;
+  height: 18px;
+  opacity: 0.3;
+  position: absolute;
+  right: 15px;
+  top: 35px;
+  cursor: pointer;
+
+
+}
+.clearIcon:hover{
+  opacity: 0.8;
+}
+.text {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+.p {
+  margin-left: 300px;
+}
+
+.pagination {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination li {
+  display: inline-block;
+  padding: 10px 17px;
+  background-color: white;
+  font-size: 18px;
+  border-radius: 10px;
+  margin-right: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.loader {
+  margin-top: 200px;
+}
