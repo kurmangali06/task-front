@@ -1,6 +1,5 @@
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react';
-import axios  from"axios"
 import styles from '../styles/Item.module.css'
 
 
@@ -27,7 +26,6 @@ const Items = () => {
       }).catch(err => {
         console.warn(err)
       }).finally(()=> setIsLoading(false))
-      console.log(id)
     }, [id])
 
 
@@ -49,7 +47,7 @@ const Items = () => {
         if(name === '' && price === 0 && img === 0, text === ""){
           alert("все пункты обязательны к заполнению") }
       else{
-       await axios.put(`https://6300b9619a1035c7f8f6d363.mockapi.io/products/${id}`, fields);
+       await fetch.put(`https://6300b9619a1035c7f8f6d363.mockapi.io/products/${id}`, fields);
        alert("товар добавлен")}
       } catch (error) {
         console.warn(error)

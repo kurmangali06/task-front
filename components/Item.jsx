@@ -1,5 +1,4 @@
 import styles from '../styles/Item.module.css'
-import axios  from"axios"
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 
@@ -9,7 +8,7 @@ const Item = ({ id, img, name, status, price  }) => {
   const onSubmitRemove = async ()=> {
     try {
     setIsLoading(true)
-     await axios.delete(`https://6300b9619a1035c7f8f6d363.mockapi.io/products/${id}`);
+     await fetch.delete(`https://6300b9619a1035c7f8f6d363.mockapi.io/products/${id}`);
      alert("товар удален")
      
     } catch (error) {

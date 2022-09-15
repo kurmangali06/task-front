@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import {  useState } from 'react';
-import axios  from"axios"
+
 import styles from '../styles/Item.module.css'
 
 
@@ -29,7 +29,7 @@ const Edit = () => {
       if(name === '' && price === 0 && img === 0, text === ""){
         alert("все пункты обязательны к заполнению") }
     else{
-     await axios.post('https://6300b9619a1035c7f8f6d363.mockapi.io/products', fields);
+     await fetch.post('https://6300b9619a1035c7f8f6d363.mockapi.io/products', fields);
      setIsLoading(true)
      alert("товар добавлен")}
     } catch (error) {
